@@ -42,7 +42,8 @@ export default defineConfig(() => {
           // presets
           'vue',
           'vue-router',
-          'pinia'
+          'pinia',
+          '@vueuse/core'
         ] as any
       }),
       // https://github.com/unplugin/unplugin-vue-components
