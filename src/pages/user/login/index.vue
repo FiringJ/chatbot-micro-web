@@ -4,6 +4,7 @@ const isLogin = ref(false)
 const bind_account = ref('')
 const password = ref('')
 const passwordConfirm = ref('')
+const handleLogin = () => {}
 </script>
 
 <template>
