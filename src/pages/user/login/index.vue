@@ -1,24 +1,14 @@
 <script lang="ts" setup>
-  const router = useRouter()
-  const route = useRoute()
-  const opType = useRouteQuery('op_type', 'bind')
-
-  /* 登录成功后，页面重定向 */
-  const redirect = function () {}
 </script>
 
 <template>
-  <div class="view">
-    <login-panel @login-success="redirect" />
+  <div>
+    登录/注册 页面
   </div>
 </template>
 
 <route lang="yaml">
-name: login
+name: user-login
 </route>
 
-<style lang="scss" scoped>
-  .view {
-    @apply h-[100vh] relative;
-  }
-</style>
+<style lang="scss" scoped></style>

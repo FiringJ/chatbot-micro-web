@@ -5,6 +5,7 @@ import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 function kebabCase(key: string) {
   const result = key.replace(/([A-Z])/g, ' $1').trim()
@@ -44,12 +45,14 @@ export default defineConfig(() => {
           'vue-router',
           'pinia',
           '@vueuse/core'
-        ] as any
+        ] as any,
+        resolvers: [ElementPlusResolver()]
       }),
       // https://github.com/unplugin/unplugin-vue-components
       Components({
         dts: true,
         resolvers: [
+          ElementPlusResolver(),
           name => {
             // where `name` is always CapitalCase
             if (name.startsWith('App')) {

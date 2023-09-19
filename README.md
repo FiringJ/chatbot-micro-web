@@ -4,7 +4,7 @@
 
 CSS 框架：待补充
 
-UI 框架：待补充
+UI 框架：element-plus
 
 Vue 工具类：@vueuse/core
 
