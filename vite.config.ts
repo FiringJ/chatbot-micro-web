@@ -17,7 +17,7 @@ export default defineConfig(() => {
   return {
     resolve: {
       alias: {
-        '@': path.resolve(process.cwd(), 'src')
+        '~': path.resolve(process.cwd(), 'src')
       }
     },
     plugins: [
