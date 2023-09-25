@@ -8,11 +8,9 @@ export const useUserStore = defineStore('user', () => {
 
   function performLogin(res: {
     user_id: string,
-    user_account: string,
     token: string
   }) {
     token.value = res.token
-    user_account.value = res.user_account
     user_id.value = res.user_id
     isAuth.value = true
   }
